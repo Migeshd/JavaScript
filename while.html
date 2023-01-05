@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write to print 10 natural numbers
+        // wap to print even numbers from 1 10 50
+
+
+        // a=0
+        // while(a<=50){
+        //     document.write(a+ "<br>")
+        //     a++
+        // }
+
+            // a=0
+            // while(a<=50){
+            //     if(a%2==0){
+            //         document.write(a)
+            //         a++
+            //     }
+            // }
+
+
+            // wap to print the sum of each digits of the given number and count the digits
+            // let a=1257
+            // let sum=0
+            // while(a!=0)
+            // {
+            //     b=a%10
+            //     sum=sum+b
+            //     a=Math.floor(a/10)
+                // math.floor le chai . pachade ko digit lai lidhaina as hamilai a ko value aghade ko matra chainey ho
+            // }
+            // document.write(sum)
+
+
+            // reverse and palindrome
+            let a=1234
+            let sum=0
+            while(a!=0){
+                b=a%10
+                sum=(sum*10)+b
+                a=Math.floor(a/10)
+                // document.write(a)
+            }
+
+            // this is the logic for above qn
+            // case1
+            // we have a=1237
+            // b=a%10 == 7
+            // sum=(0*10)+7  ==7
+            // a=123
+
+            // now we have a=123
+            // b=a%10 == 3
+            // sum=(7*10)+3 ==73
+            // a=12
+
+            // now we have a=12
+            // b=a%10 == 2
+            // sum=(73*10)+2 == 732
+            // a=1
+            // now we have a=1
+            // b=a%10 == 1
+            // sum=(732*10)+1  == 7321
+            // a=0
+
+
+            document.write(sum)
+    </script>
+</body>
+</html>

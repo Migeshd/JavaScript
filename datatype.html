@@ -1,0 +1,62 @@
+<!-- yesma hamro int float haru chaldaina
+    there are 2 data types in js
+    1) primitive data types
+        a) number
+        b) null
+        c) string
+        d) Symbol()
+        e) boolean
+        f) BigInt()
+        g) undefined
+
+
+    2) non-primitive data types
+        a) object(key value collection)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // a=10  ans will be number
+        //  a=true   ans will be boolean
+        //  a="10"   ans will be string
+        // document.write(`${typeof (10)} <br>`)
+        // yesare hamile data type herna sakincha 
+        a=10
+        a=null
+        document.write(`${typeof (a)} <br>`)
+
+
+        const Person={
+            "name":"Migesh",
+            "Lastname":"dawadi",
+            "name":"Mig",
+            "age":"20",
+            "High_School":{
+                "+2":"united",
+                "school":"lalai"
+
+            }
+            
+            
+        }
+        document.write(`${typeof (Person)} <br>`)
+        console.log(Person)
+        // object ma same variable ko 2 ota halyo bhane update bhayera pachade ko chai aaucha 
+        document.write(Person["name"]+"<br>")
+        document.write(Person["age"]+"<br>")
+        document.write(Person["+2"])
+        document.write(Object.keys(Person)+"<br>")
+        document.write(Object.values(Person))
+        document.write(Person["High_School"]["school"]+"<br>")
+
+    </script>
+</body>
+</html>

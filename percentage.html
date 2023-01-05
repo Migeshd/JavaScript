@@ -1,0 +1,43 @@
+<!-- 
+    0-40 >= fail
+    41-59 >= 3rd division
+    60-69 >= second division
+    70-79 >= first division
+    80-100 >= distinction
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let marks=Number(prompt("Enter Your marks"))
+        document.write(marks + "<br>")
+        if(marks>=0 && marks<40){
+            document.write("fail")
+        }
+        else if(marks>=41 && marks<59){
+            document.write("3rd division")
+        }
+        else if(marks>=60 && marks<=69){
+            document.write("2nd division")
+        }
+        else if(marks>=70 && marks<=79){
+            document.write("1st division")
+        }
+        else if(marks>=80 && marks<=100){
+            document.write("distinction")
+        }
+        else if(marks>100){
+            document.write("input error")
+        }
+        else{
+            alert("error 404 percentae must be between 0 to 100")
+        }
+    </script>
+ </body>
+ </html>

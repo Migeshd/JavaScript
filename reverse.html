@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=12345
+        // sum=0
+        // while(a!=0){
+        //     b=a%10
+        //     sum=(sum*10)+b
+        //     a=Math.floor(a/10)
+        // }
+        // document.write(sum)
+        // yo mathi ko chai normally hamile reverse gareko ho without using function
+
+
+        function rev(x){
+            sum=0
+            while(x!=0){
+                let b=x%10
+                sum=(sum*10)+b
+                x=Math.floor(x/10)
+            }
+            document.write(`${sum}<br>`)
+
+        }
+        rev(12345)
+        rev(1122334455)
+        // abha function halera garda chai abha hamile jati ota pani nikalna sakchau code repeatedly linu pardaina eutai code line ani tala function call dherai choti gardene ani kam garcha
+    </script>
+</body>
+</html>

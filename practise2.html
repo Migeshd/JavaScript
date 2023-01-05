@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <style>
+    /* Add some basic styles for the calculator */
+    .calculator {
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .calculator input {
+      width: 80%;
+      margin-bottom: 20px;
+      font-size: 24px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ddd;
+      color: #333;
+      padding: 10px;
+      text-align: right;
+    }
+    .calculator button {
+      width: 20%;
+      font-size: 24px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .calculator button:hover {
+      background-color: #fff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a container for the calculator -->
+  <div class="calculator">
+    <!-- Create an input for the user to type the expression -->
+    <input type="text" id="expression">
+    <!-- Create a button for each number and operator -->
+    <button value="7">7</button>
+    <button value="8">8</button>
+    <button value="9">9</button>
+    <button value="/">/</button>
+    <button value="4">4</button>
+    <button value="5">5</button>
+    <button value="6">6</button>
+    <button value="*">*</button>
+    <button value="1">1</button>
+    <button value="2">2</button>
+    <button value="3">3</button>
+    <button value="-">-</button>
+    <button value="0">0</button>
+    <button value=".">.</button>
+    <button value="=">=</button>
+    <button value="+">+</button>
+    <!-- Create a button for each scientific function -->
+    <button value="sqrt(">&radic;</button>
+    <button value="^2">x<sup>2</sup></button>
+    <button value="^">x<sup>y</sup></button>
+    <button value="log(">log</button>
+    <button value="ln(">ln</button>
+    <button value="sin(">sin</button>
+    <button value="cos(">cos</button>
+    <button value="tan(">tan</button>
+  </div>
+
+  <!-- Add some JavaScript to handle the calculations -->
+  <script>
+    // Get a reference to the buttons and the input
+    const buttons = document.querySelectorAll('button');
+    const input = document.querySelector('input');
+
+    // Add an event listener to each button
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Get the value of the button
+        const value = button.value;
+
+        // If the value is an equal sign, calculate the result
+        if (value === '=') {
+          // Use the eval function to evaluate the expression
+          const result = eval(input.value);
+          // Display the result
+          input.value = result;
+        }
+        // If the value is a clear button, clear the input
+        else if (value === 'C') {
+          input.value = '';
+        }
+        // Otherwise, just append the value to the input
+        else {
+          input.value += value;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

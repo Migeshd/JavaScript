@@ -1,0 +1,66 @@
+<!-- 
+    var = it is a global scope and it can be updated and also can be redeclared
+    let = it is a block scope and is can be update but cannot be redeclared
+    const = it is a block scope and it can neither be updated nor redeclared
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // this is for var
+        // var a=10
+        // var a=20
+        // means variable can be redeclared abha output chai 20 aaucha
+        // a=30
+        // abha yo bhanya chai update gareko ho and the ans will be 30
+        // {
+        //     var a=40
+        //     document.write(a +"<br>")
+            // abha yo garda chai a ko value 40 huncha as yo global ho matlabh last ma jun value halyo tei ans huncha and the ans will be printed twice as there are two document.write(a)
+        // }
+        // document.write(a)
+// end of var
+
+// this is for let
+// let a=10
+// let a=20
+// abha yesare garna chai mildaina as let cannot be redeclared
+// a=100
+// yesare garna chai payo as we can update in let
+// document.write(a+"<br>")
+{
+    // let a=30
+    // a=40
+    // document.write(a+"<br>")
+}
+// document.write(a+"<br>")
+// as it is a block scope so the global function does not work so the ans will be 100 40 100
+// let ends here
+
+
+// const a=100
+// const a=10
+// yesare lekhna milena as it cannot be redeclared
+// a=100
+// yo ni garna mildaina as its not possible to update
+
+// document.write(a)
+// {
+//     const a=20
+//     document.write(a)
+// }
+// document.write(a)
+// hamile le scope value deko chaina bhane global value lai nai lincha 
+
+
+
+    </script>
+ </body>
+ </html>
