@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Math.random()*6
+        // 0 dekhin 6 samman ko random number aaucha yo garda
+        document.write(a+ "<br>")
+        document.write("Round:"+ Math.round(a)+ "<br>")
+        // Math.round le chai round of garera value lekhdencha
+        document.write("Truncate:"+Math.trunc(a)+"<br>")
+        // aghade ko value liney that means the value comming frfom document.write(a+ "<br>") this code
+        document.write("Floor:"+Math.floor(a)+"<br>")
+        // means pachade ko value naauney point pachi ko
+        document.write("Ceiling:"+Math.ceil(a)+"<br>")
+        // value ma 1.2 matra aayo bhane pani ceiling le chai 2 banaidencha matlab point ko pachade kei aauna sath add 1 huncha 
+        let pi=Math.PI
+        let r=2
+        let area=pi*r*r
+        document.write(pi +"<br>")
+        document.write(`Area of Circle:${area}<br>`)
+        document.write(`fixed: ${area.toFixed(2)}<br>`)
+        // to fixed le chai dot pachi kati ota value halney bhanera kam garcha
+        document.write(`truncate: ${area.toPrecision(3)}<br>`)
+        // yesma cchai total number 3 ota matra print garny bhanney huncha
+        document.write(`squarroot:${Math.sqrt(83432)}<br>`)
+        document.write(`cuberoot: ${Math.cbrt(27)}<br>`)
+        document.write(`power:${Math.pow(2,3)}<br>`)
+        // yo cha 2 ko power 3 huncha 
+
+    </script>
+</body>
+</html>

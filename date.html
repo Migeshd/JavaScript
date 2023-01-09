@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let today = new Date()
+        document.write(`${today}<br>`)
+        // this is how u place the date
+        let new_date = new Date(2015, 01, 25, 16, 20, 32)
+        // yesma chai 0 bhaneko january huncha 1 bhaneko feb huncha 2 halyo bhane march huncha and so on   which is the numbering starts from index number which is starting from 0
+        // 16,20,32 yesare chai hamile time deko ho
+        document.write(`${new_date}<br>`)
+
+        let year = today.getFullYear()
+        document.write(`Nepal Year${year}<br>`)
+
+        let month = today.getMonth()
+        document.write(`Month:${month}<br>`)
+        // the ans will be  0 as we know 0  means january
+        Month = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"]
+        let get_month = Month[month]
+        document.write(`Month:Name=${get_month}<br>`)
+        // by this we can declare the month name too
+
+        let date=today.getDate()
+        document.write(`date=${date}<br>`)
+
+        let h=today.getHours()
+        document.write(`hours=${h}<br>`)
+
+        let m=today.getMinutes()
+        // let s=today.getSeconds()
+        // let ms=today.getMilliseconds()
+        let day=today.getDay()
+
+        document.write(`minutes=${m}<br>`)
+        // document.write(`seconds=${s}<br>`)
+        // document.write(`Milliseconds=${ms}<br>`)
+        document.write(`day=${day}<br>`)
+        Day=["sun","mon","tue","wed","thu","fri","sat"]
+        get_day=Day[day]  //get_day ko place ma j lekhdha ni huncha its not a rule
+        document.write(`day:: ${get_day}`)
+
+    </script>
+</body>
+
+</html>
